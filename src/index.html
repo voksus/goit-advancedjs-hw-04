@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тема 8. Синтаксис async/await і пагінація. Домашня робота</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="search-form-section">
+        <form id="searchForm" class="form">
+          <input
+            type="text"
+            id="query"
+            placeholder="Search for images..."
+            required
+          />
+          <button type="submit" class="submit-btn">Search</button>
+        </form>
+        <div class="search-stats"></div>
+      </section>
+      <section>
+        <ul class="gallery"></ul>
+        <span class="loader is-hidden"></span>
+        <button type="button" class="load-more is-hidden">Load more</button>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
