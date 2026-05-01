@@ -14,25 +14,25 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
       <div class="image-info">
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="./images/icons.svg#likes" />
+            <use href="../images/icons.svg#likes" />
           </svg>
           <span class="info-value">${Z(n.likes)}</span>
         </div>
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="./images/icons.svg#views" />
+            <use href="../images/icons.svg#views" />
           </svg>
           <span class="info-value">${Z(n.views)}</span>
         </div>
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="./images/icons.svg#comments" />
+            <use href="../images/icons.svg#comments" />
           </svg>
           <span class="info-value">${Z(n.comments)}</span>
         </div>
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="./images/icons.svg#download" />
+            <use href="../images/icons.svg#download" />
           </svg>
           <span class="info-value">${Z(n.downloads)}</span>
         </div>
