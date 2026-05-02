@@ -32,6 +32,7 @@ form.addEventListener('submit', event => {
   }
 
   clearGallery();
+  hideLoadMoreButton();
   loadData(query);
 });
 
@@ -71,6 +72,7 @@ function manageResponse(response) {
   if (totalHits / maxImagesPerPage > page) {
     showLoadMoreButton();
   } else {
+    hideLoadMoreButton();
     iziToast.info(
       iziToastMessageGenerator(
         "We're sorry, but you've reached the end of search results."
