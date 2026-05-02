@@ -34,25 +34,25 @@ function createGallery(images) {
       <div class="image-info">
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="../images/icons.svg#likes" />
+            <use href="./icons.svg#likes" />
           </svg>
           <span class="info-value">${digitSeparatorFix(img.likes)}</span>
         </div>
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="../images/icons.svg#views" />
+            <use href="./icons.svg#views" />
           </svg>
           <span class="info-value">${digitSeparatorFix(img.views)}</span>
         </div>
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="../images/icons.svg#comments" />
+            <use href="./icons.svg#comments" />
           </svg>
           <span class="info-value">${digitSeparatorFix(img.comments)}</span>
         </div>
         <div class="info-item">
           <svg class="info-label" width="14" height="14">
-            <use href="../images/icons.svg#download" />
+            <use href="./icons.svg#download" />
           </svg>
           <span class="info-value">${digitSeparatorFix(img.downloads)}</span>
         </div>
@@ -87,7 +87,7 @@ function hideLoadMoreButton() {
 
 // Утилітні методи
 function digitSeparatorFix(number) {
-  return number.toLocaleString('de-CH'); // Розділення розрядів апострофами
+  return number ? number.toLocaleString('de-CH') : '0'; // Розділення розрядів апострофами
   // return number.toLocaleString('en-US');  // ... комами
   // return number.toLocaleString('ua-UA');  // ... пробілами
 }
